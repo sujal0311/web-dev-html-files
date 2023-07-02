@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <h2>Event Registration</h2>
+   
+    <form action="/action_page.php">
+<label for="name">Name: </label>
+<input type="text" name="name" id="name" required>
+<br/><br/>
+<!-- for email -->
+<label for="email">Email: </label>
+<input type="email" name="email" id="email" required>
+<br/><br/>
+<!-- for phone number -->
+<label for="phone">Phone: </label>
+<input type="tel" name="phone" id="phone" pattern="[7-9][0-9]{9}" required>
+<br/><br/>
+<label for="occupationtype">Occupation:</label>
+<select name="occupationtype" id="occupationtype" required>
+    <option value="selection"  selected disabled >Select an option</option>
+    <option value="student" >Student</option>
+    <option value="professional" >Professional</option>
+    <option value="other" >Other</option>
+</select>
+<br/><br/>
+<fieldset>
+    <legend>Topics of Interest</legend>
+    <input type="checkbox" name="HTML" id="HTML">
+    <label for="HTML" >HTML</label>
+    <input type="checkbox" name="CSS" id="CSS">
+    <label for="CSS" >CSS</label>
+    <input type="checkbox" name="JavaScript" id="JavaScript">
+    <label for="JavaScript" >JavaScript</label>
+</fieldset>
+<br/>
+<label for="textarea1">Comments:</label><br/>
+<textarea name="textarea1" id="textarea1" cols="25" rows="10"></textarea><br/><br/>
+<input type="button" value="Register" >
+<br/><br/>
+</form>
+</body>
+</html>
